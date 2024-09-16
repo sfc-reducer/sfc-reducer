@@ -1,0 +1,12 @@
+(declare-fun v0 () (_ BitVec 12))
+(declare-fun v2 () (_ BitVec 16))
+(assert
+(let (($e2 (_ bv15   12)))
+(let (($e8 (_ bv15 4)))
+(let (($e73 (concat $e8  $e2)))
+(let (($e76 (bvand        $e73         v2   )))
+(let (($e420 (concat $e8   v0)))
+(let (($e421 (bvand $e420 $e76)))
+(let (($e458 (   extract      $e420)))
+             (ite        $e458  $e421 $e76)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       )                                    ))                                                                                                                                                                                                                                                                                                                                                       )  )                                                     )     ) )

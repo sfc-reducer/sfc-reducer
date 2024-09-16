@@ -1,0 +1,16 @@
+(declare-fun bvlambda_3_ ()Bool         )
+(declare-fun a88 () (Array (_ BitVec 1) (_ BitVec 5)))
+(assert
+(let (($e30 (_ bv22 5)))
+(let (($e92         bvlambda_3_             ))
+(let (($e332         $e92             ))
+(let (($e335         $e332             ))
+(let (($e336         $e335             ))
+(let (($e337         $e336             ))
+(let (($e338        $e337       ))
+(let (($e339        $e338       ))
+(let (($e340                    $e339 ))
+(let (($e341 (store a88 true        $e30)))
+(
+                 extract(select $e341(bvnot $e340))
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        ))))))))  )                                                                                                                                                                                                                                               )                                                 )                             )

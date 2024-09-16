@@ -1,0 +1,11 @@
+(declare-fun a31 () (Array (_ BitVec 1) (_ BitVec 3)))
+(assert
+(let (($e1 (_ bv0 1)))
+(let (($e6 (_ bv4 3)))
+(let (($e56 (select a31  $e1 )))
+(let (($e57 (   extract      $e56)))
+(let (($e58 (store a31 true        $e6)))
+(let (($e59 (store $e58 $e57 $e56)))
+(let (($e60 (select $e59 true       )))
+            (   extract      $e60)
+                                                                                                                              )))))                                        )    ))

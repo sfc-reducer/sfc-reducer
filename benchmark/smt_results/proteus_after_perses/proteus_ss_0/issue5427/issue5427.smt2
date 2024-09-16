@@ -1,0 +1,6 @@
+(declare-const v7  Bool)
+(declare-const i2  Int)
+(declare-const i15  Int)
+(declare-heap (Int Int))
+(assert                                                                (sep (pto i2 (+ 54 i15))      v7        )                                                                                                                                                                                                              )
+(check-sat)

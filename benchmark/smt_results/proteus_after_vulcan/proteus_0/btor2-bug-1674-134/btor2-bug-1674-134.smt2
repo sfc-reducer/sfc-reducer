@@ -1,0 +1,13 @@
+(declare-fun bvlambda_8_ ()Bool         )
+(declare-fun bvlambda_12_ ()Bool         )
+(declare-fun a31 () (Array (_ BitVec 1) (_ BitVec 3)))
+(assert
+(let (($e6 (_ bv0 3)))
+(let (($e89 (store a31  false $e6)))
+(let (($e93 (select $e89 bvlambda_12_)))
+(let (($e95      (= $e6 $e93)         ))
+(let (($e110 (store a31 bvlambda_8_ $e6)))
+(let (($e111 (select $e110 true        )))
+(let (($e112      (= $e6 $e111)         ))
+             (bvand $e112 (not   $e95))
+                                                     )))              ) )   )                                                                   )     )

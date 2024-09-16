@@ -1,0 +1,8 @@
+(set-option :strings-lazy-pp false)
+(declare-fun str0 () String)
+(declare-fun str2 () String)
+(assert (= false                   (str.prefixof str0 str2)                              ))
+(push 1)
+(assert (str.in_re str2 (str.to_re "EkkWHOxqtf")))
+(assert (str.in_re str0 (str.to_re "EkkWHOxqtf")))
+(check-sat)

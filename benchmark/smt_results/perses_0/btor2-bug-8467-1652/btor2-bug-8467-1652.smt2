@@ -1,0 +1,11 @@
+(declare-fun bvlambda_11_ () (_ BitVec 1))
+(declare-fun a92 () (Array (_ BitVec 1) (_ BitVec 4)))
+(assert
+(let (($e1 (_ bv0 1)))
+(let (($e22 (_ bv12 4)))
+(let (($e23 (_ bv0 4)))
+(let (($e159 (store a92 (bvnot $e1)        $e22 )))
+(let (($e160 (store $e159 bvlambda_11_ $e23)))
+(let (($e161 (select $e160 (bvnot $e1))))
+             (   extract      $e161)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       )))                                                                                                           ))                    ))

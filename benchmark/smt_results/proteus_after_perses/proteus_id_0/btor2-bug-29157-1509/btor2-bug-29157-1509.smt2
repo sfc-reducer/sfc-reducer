@@ -1,0 +1,11 @@
+(declare-fun bvlambda_16_ ()Bool         )
+(declare-fun a104 () (Array (_ BitVec 1) (_ BitVec 10)))
+(assert
+(let (($e2 (_ bv27398 16)))
+(let (($e15 (_ bv0 11)))
+(let (($e129 ((_ extract 15 6) $e2  )))
+(let (($e143         $e15              ))
+(let (($e852 (store a104 true               $e129 )))
+(let (($e853 (select $e852 (bvnot bvlambda_16_))))
+             (   extract      $e853)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ))                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    )             )                                                                                       )            ) )

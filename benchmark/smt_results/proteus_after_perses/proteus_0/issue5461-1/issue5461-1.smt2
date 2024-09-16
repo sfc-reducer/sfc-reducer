@@ -1,0 +1,5 @@
+(declare-const x  Int)
+(declare-const y  Int)
+(assert (< y 0))
+(assert (> ((_ iand 4) x y) 0))
+(check-sat)

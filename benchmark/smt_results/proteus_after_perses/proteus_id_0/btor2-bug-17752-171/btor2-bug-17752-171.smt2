@@ -1,0 +1,13 @@
+(declare-fun bvlambda_20_ () (_ BitVec 1))
+(declare-fun a98 () (Array (_ BitVec 1) (_ BitVec 10)))
+(assert
+(let (($e1 (_ bv0 1)))
+(let (($e10 (_ bv2 2)))
+(let (($e15 (_ bv2 9)))
+(let (($e254 (concat $e1 bvlambda_20_)))
+(let (($e255      (bvult        $e10  $e254)         ))
+(let (($e634 (concat        $e15  $e255)))
+(let (($e636 (store a98 true        $e634)))
+(let (($e637 (select $e636 (bvnot $e255))))
+             (   extract      $e637)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          )) )                                                                                                                                                                                                                                                                                                                                                                                          ))                                                                                                                                                                           )    )        ))

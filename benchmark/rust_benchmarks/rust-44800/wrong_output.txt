@@ -1,0 +1,78 @@
+==2612== Memcheck, a memory error detector
+==2612== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==2612== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==2612== Command: ./wrong.out
+==2612== 
+old packet =  00 88 01 02 03 04 05 06 01 02 03 04 05 06 01 02 03 04 05 06 00 37 03 80 45 14 00 14 00 15 00 17
+pushing D9 58 FB A8 
+new packet =  00 88 01 02 03 04 05 06 01 02 03 04 05 06 01 02 03 04 05 06 00 37 03 80 45 14 00 14 00 15 00 17 00 58 FB A8
+==2612== Invalid read of size 4
+==2612==    at 0x48666C0: pthread_mutex_lock (pthread_mutex_lock.c:67)
+==2612==    by 0x117987: lock (mutex.rs:67)
+==2612==    by 0x117987: lock (mutex.rs:40)
+==2612==    by 0x117987: {{closure}}<std::sys_common::remutex::ReentrantMutex<core::cell::RefCell<std::io::buffered::LineWriter<std::io::stdio::Maybe<std::io::stdio::StdoutRaw>>>>> (lazy.rs:56)
+==2612==    by 0x117987: <F as alloc::boxed::FnBox<A>>::call_box (boxed.rs:651)
+==2612==    by 0x11CAC1: call_once<(),()> (boxed.rs:661)
+==2612==    by 0x11CAC1: cleanup (at_exit_imp.rs:61)
+==2612==    by 0x11CAC1: {{closure}} (mod.rs:109)
+==2612==    by 0x11CAC1: std::sync::once::Once::call_once::{{closure}} (once.rs:227)
+==2612==    by 0x11CD1C: std::sync::once::Once::call_inner (once.rs:307)
+==2612==    by 0x122301: call_once<closure> (once.rs:227)
+==2612==    by 0x122301: cleanup (mod.rs:106)
+==2612==    by 0x122301: std::rt::lang_start (rt.rs:64)
+==2612==    by 0x115AE9: main (in /tmp/benchmark/rust_benchmarks/rust-44800/wrong.out)
+==2612==  Address 0x10 is not stack'd, malloc'd or (recently) free'd
+==2612== 
+==2612== Can't extend stack to 0x4845138 during signal delivery for thread 1:
+==2612==   no stack segment
+==2612== 
+==2612== Process terminating with default action of signal 11 (SIGSEGV): dumping core
+==2612==  Access not within mapped region at address 0x4845138
+==2612==    at 0x48666C0: pthread_mutex_lock (pthread_mutex_lock.c:67)
+==2612==    by 0x117987: lock (mutex.rs:67)
+==2612==    by 0x117987: lock (mutex.rs:40)
+==2612==    by 0x117987: {{closure}}<std::sys_common::remutex::ReentrantMutex<core::cell::RefCell<std::io::buffered::LineWriter<std::io::stdio::Maybe<std::io::stdio::StdoutRaw>>>>> (lazy.rs:56)
+==2612==    by 0x117987: <F as alloc::boxed::FnBox<A>>::call_box (boxed.rs:651)
+==2612==    by 0x11CAC1: call_once<(),()> (boxed.rs:661)
+==2612==    by 0x11CAC1: cleanup (at_exit_imp.rs:61)
+==2612==    by 0x11CAC1: {{closure}} (mod.rs:109)
+==2612==    by 0x11CAC1: std::sync::once::Once::call_once::{{closure}} (once.rs:227)
+==2612==    by 0x11CD1C: std::sync::once::Once::call_inner (once.rs:307)
+==2612==    by 0x122301: call_once<closure> (once.rs:227)
+==2612==    by 0x122301: cleanup (mod.rs:106)
+==2612==    by 0x122301: std::rt::lang_start (rt.rs:64)
+==2612==    by 0x115AE9: main (in /tmp/benchmark/rust_benchmarks/rust-44800/wrong.out)
+==2612==  If you believe this happened as a result of a stack
+==2612==  overflow in your program's main thread (unlikely but
+==2612==  possible), you can try to increase the size of the
+==2612==  main thread stack using the --main-stacksize= flag.
+==2612==  The main thread stack size used in this run was 8388608.
+==2612== Invalid write of size 8
+==2612==    at 0x482B110: _vgnU_freeres (vg_preloaded.c:59)
+==2612==  Address 0x4845ff8 is on thread 1's stack
+==2612== 
+==2612== 
+==2612== Process terminating with default action of signal 11 (SIGSEGV)
+==2612==  Access not within mapped region at address 0x4845FF8
+==2612==    at 0x482B110: _vgnU_freeres (vg_preloaded.c:59)
+==2612==  If you believe this happened as a result of a stack
+==2612==  overflow in your program's main thread (unlikely but
+==2612==  possible), you can try to increase the size of the
+==2612==  main thread stack using the --main-stacksize= flag.
+==2612==  The main thread stack size used in this run was 8388608.
+==2612== 
+==2612== HEAP SUMMARY:
+==2612==     in use at exit: 64 bytes in 2 blocks
+==2612==   total heap usage: 7 allocs, 5 frees, 2,032 bytes allocated
+==2612== 
+==2612== LEAK SUMMARY:
+==2612==    definitely lost: 0 bytes in 0 blocks
+==2612==    indirectly lost: 0 bytes in 0 blocks
+==2612==      possibly lost: 0 bytes in 0 blocks
+==2612==    still reachable: 64 bytes in 2 blocks
+==2612==         suppressed: 0 bytes in 0 blocks
+==2612== Rerun with --leak-check=full to see details of leaked memory
+==2612== 
+==2612== For counts of detected and suppressed errors, rerun with: -v
+==2612== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
+timeout: the monitored command dumped core

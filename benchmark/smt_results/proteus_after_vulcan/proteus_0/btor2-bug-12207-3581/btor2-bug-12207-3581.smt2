@@ -1,0 +1,13 @@
+(declare-fun bvlambda_28_ ()Bool         )
+(declare-fun a98 () (Array (_ BitVec 1) (_ BitVec 10)))
+(assert
+(let (($e116 (select a98 true                )))
+(let (($e214 (concat false        $e116)))
+(let (($e246 ((_ extract 10 1) $e214)))
+(let (($e247 (store a98 false $e246)))
+(let (($e248 (store $e247 bvlambda_28_ $e116)))
+(let (($e249 (select $e248 true       )))
+(let (($e252 ((_ extract 8 0) $e246)))
+(let (($e253 ((_ extract 8 0) $e249)))
+                  (bvult $e253 $e252)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          ))  ))))                               )                                                                                                 )                                                                                )

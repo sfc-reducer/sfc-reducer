@@ -1,0 +1,10 @@
+(declare-datatypes ((a 0)) (((b (c (_ BitVec 32)) (d a)) (BitVec))))
+(declare-fun f (a (_ BitVec 32)) Bool)
+(declare-fun m (a) (_ BitVec 32))
+(assert (exists ((a a)) (=             a
+                       (ite (=     (c    a ) (m a)) (b (c    a )
+             a   )             (d a)  )    )))
+(assert (exists ((o a) (a (_ BitVec 32))                  )
+ (f      (d o)  a)
+                              ))
+(check-sat)

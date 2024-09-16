@@ -1,0 +1,18 @@
+(declare-fun bvlambda_52_ ()Bool         )
+(declare-fun a112 () (Array (_ BitVec 1) (_ BitVec 9)))
+(assert
+(let (($e12 (_ bv42 16)))
+(let (($e22 (_ bv42 8)))
+(let (($e124 (concat $e22 false)))
+(let (($e125 (store a112 bvlambda_52_ $e124)))
+(let (($e126 (select $e125 true )))
+(let (($e779      (bvult $e126 $e124)         ))
+(let (($e786                      (not   $e779) ))
+(let (($e840 (store a112 false $e124)))
+(let (($e841 (select $e840 $e786       )))
+(let (($e843 (concat        $e12  $e841)))
+(let (($e854 ((_ extract 10 3) $e843)))
+(let (($e855      (= $e22 $e854)         ))
+(
+not                       (= $e855 $e786)
+                                                                                                                                                                                                                                                                                                                                                                    )                     ))          ) ))                                                     )      )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            )))                              )         )           )

@@ -1,0 +1,5 @@
+(declare-const _substvar_21_  String)
+(declare-const _substvar_29_  String)
+(set-option :strings-lazy-pp not                )
+(assert                          (str.<= _substvar_21_ _substvar_29_)           )
+(check-sat)

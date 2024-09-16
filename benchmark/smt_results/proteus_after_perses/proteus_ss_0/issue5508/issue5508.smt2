@@ -1,0 +1,6 @@
+(declare-const i2  Int)
+(declare-const str10  String)
+(declare-const str19  String)
+(declare-const i19  Int)
+(assert (str.contains (str.from_int i2) (str.++ str19 "uKykCsFtVM" (str.from_int i19) "hORknmKIFtylbjBJVLsMNyAUKzpayeBQPHqN" str10)))
+(check-sat)

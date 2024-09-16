@@ -1,0 +1,11 @@
+(declare-fun bvlambda_4_ ()Bool         )
+(declare-fun bvlambda_24_ ()Bool         )
+(declare-fun a92 () (Array (_ BitVec 1) (_ BitVec 12)))
+(assert
+(let (($e18 (_ bv476 12)))
+(let (($e112 (store a92 bvlambda_4_ $e18)))
+(let (($e226 (select $e112 true       )))
+(let (($e232 (store a92 false $e226)))
+(let (($e233 (select $e232 bvlambda_24_)))
+                  (bvult $e226 $e233)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ))     )                                                                                                                 )                                                             )                 )

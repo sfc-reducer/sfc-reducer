@@ -1,0 +1,31 @@
+[package]
+name = "primal-slowsieve"
+version = "0.3.0"
+authors = ["Huon Wilson <dbau.pp@gmail.com>"]
+edition = "2018"
+
+homepage = "https://github.com/huonw/primal"
+repository = "https://github.com/huonw/primal"
+documentation = "http://docs.rs/primal-slowsieve/"
+license = "MIT/Apache-2.0"
+keywords = ["math", "mathematics", "primes", "number-theory"]
+
+description = """
+A simple sieve of Eratosthenes designed for testing faster sieves. You
+probably want `primal-sieve`, or even just `primal` itself.
+"""
+
+[dependencies]
+primal-bit = { path = "../primal-bit", version = "0.3" }
+primal-estimate = { path = "../primal-estimate", version = "0.3" }
+
+[dev-dependencies]
+criterion = { version = "0.3.4", features = ["html_reports"] }
+
+[[bench]]
+name = "bench"
+harness = false
+
+[features]
+unstable = []
+slow_tests = []

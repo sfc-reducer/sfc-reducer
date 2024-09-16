@@ -1,0 +1,6 @@
+(declare-fun a () (Seq (Seq Int)))
+(declare-fun e () (Seq Int))
+(declare-fun f () (Seq Int))
+(assert (distinct a         (seq.unit e)   ))
+(assert (=         (seq.unit f)    a  ))
+(check-sat)

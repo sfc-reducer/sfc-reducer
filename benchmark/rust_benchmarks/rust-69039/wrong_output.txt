@@ -1,0 +1,5 @@
+What is your name?
+How are you feeling?
+timeout: the monitored command dumped core
+./r.sh: line 27:  2810 Done                    echo -e "a\nb"
+      2811 Segmentation fault      | timeout -s 9 30 "${EXE_WRONG}"

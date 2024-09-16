@@ -1,0 +1,12 @@
+(declare-fun a15 () (Array (_ BitVec 11) (_ BitVec 3)))
+(declare-fun a17 () (Array (_ BitVec 1) (_ BitVec 10)))
+(assert
+(let (($e5 (_ bv2 10)))
+(let (($e7 (_ bv2 11)))
+(let (($e26 (select a15  $e7)))
+(let (($e32 (   extract      $e26)))
+(let (($e36 (store a17 true         (bvnot $e5))))
+(let (($e37 (store $e36 $e32 $e5 )))
+(let (($e38 (select $e37 true       )))
+                 (= $e5 $e38)
+                                         )))   )     )          ) )    )

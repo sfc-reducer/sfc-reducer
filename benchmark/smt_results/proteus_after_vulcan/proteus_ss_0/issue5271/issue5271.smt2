@@ -1,0 +1,5 @@
+(declare-const i6 Int)
+(declare-const st7  (Set Int))
+(assert (> (card st7)                 46      ))
+(assert (and                                                              (member (mod i6 46) st7)                                                           (member i6  st7 )                                                                                                                                                                            ))
+(check-sat)

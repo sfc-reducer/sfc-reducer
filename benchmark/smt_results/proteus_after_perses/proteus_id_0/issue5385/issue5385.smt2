@@ -1,0 +1,6 @@
+(declare-fun r1 () Real)
+(declare-fun r3 () Int )
+(assert (= r1    (* r3 r1         )            ))
+(check-sat)
+(assert (< 0.0              r1 ))
+(check-sat)

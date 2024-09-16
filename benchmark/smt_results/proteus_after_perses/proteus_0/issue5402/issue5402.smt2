@@ -1,0 +1,6 @@
+(declare-const i1  Int)
+(declare-const st4  (Set Int))
+(declare-const st6  (Set Int))
+(assert (is_singleton (complement (setminus (intersection st6 st4) st4))))
+(assert (> 0 (+   (abs (- (card st4) 16))                           i1)))
+(check-sat)

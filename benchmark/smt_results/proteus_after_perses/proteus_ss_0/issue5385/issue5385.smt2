@@ -1,0 +1,8 @@
+(declare-const r1  Real)
+(declare-const r3  Real)
+(declare-const i5  Int)
+(assert (= r1    (* r3 r1         )            ))
+(check-sat)
+(assert (>=                    r1                    i5        ))
+(assert (< 0.0              i5 ))
+(check-sat)

@@ -1,0 +1,2 @@
+static FOO:isize=
+super();

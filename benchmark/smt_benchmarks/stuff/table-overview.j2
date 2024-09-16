@@ -1,0 +1,13 @@
+\begin{tabularx}{1.1\linewidth}{X{% for s in solvers %}@{\hskip .75em}r{% endfor %}}
+        \toprule
+{% for s in solvers %}
+        & \rotatebox[origin=l]{65}{\VAR{solvernames[s]}}
+{% endfor %}
+        \\
+        \midrule
+{% for d in data %}
+        \textbf{\VAR{datanames[d]}}
+        {% for s in solvers %} & \VAR{data[d][s]}{% endfor %} \\
+{% endfor %}
+        \bottomrule
+\end{tabularx}

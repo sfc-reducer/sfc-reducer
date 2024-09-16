@@ -1,0 +1,12 @@
+(declare-fun bvlambda_5_ ()Bool         )
+(declare-fun a38 () (Array (_ BitVec 1) (_ BitVec 15)))
+(assert
+(let (($e12 (_ bv32766 15)))
+(let (($e70 (store a38 bvlambda_5_ $e12)))
+(let (($e71 (select $e70 true       )))
+(let (($e93 (   extract      $e71)))
+(let (($e94 (store a38 false       $e71)))
+(let (($e95 (select $e94 $e93)))
+(let (($e108 (bvudiv        $e95  $e95 )))
+                  (= $e108 $e95 )
+                                                                                                                                                                         )            )))                     ))                                                  )           )

@@ -1,0 +1,5 @@
+(set-logic QF_UFLIA)
+(declare-fun i4 () Int)
+(declare-fun i9 () Int)
+(assert (= 327    ((_ iand 4) i4 i9)       ))
+(check-sat)

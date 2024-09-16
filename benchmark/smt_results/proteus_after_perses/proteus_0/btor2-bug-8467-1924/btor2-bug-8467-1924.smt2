@@ -1,0 +1,10 @@
+(declare-fun a50 () (Array (_ BitVec 1) (_ BitVec 4)))
+(assert
+(let (($e5 (_ bv14 4)))
+(let (($e73 (select a50 false)))
+(let (($e194 (   extract      $e73 )))
+(let (($e195 (store a50 true         $e5)))
+(let (($e196 (store $e195 $e194 $e73       )))
+(let (($e197 (select $e196 true       )))
+                  (= $e73 $e197)
+                                                                                                                                                                                                           ))))                                                                                                                        )                                                 )    )

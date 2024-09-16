@@ -1,0 +1,15 @@
+const
+volatile
+short
+a
+;
+char
+b
+(
+)
+{
+return
+-
+a
+;
+}

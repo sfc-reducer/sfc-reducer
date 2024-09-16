@@ -1,0 +1,12 @@
+(declare-fun bvlambda_4_ () (_ BitVec 1))
+(declare-fun a48 () (Array (_ BitVec 1) (_ BitVec 4)))
+(assert
+(let (($e15 (_ bv0 4)))
+(let (($e35 (_ bv14 7)))
+(let (($e76 (store a48 true        (bvnot $e15))))
+(let (($e77 (store $e76 bvlambda_4_ $e15)))
+(let (($e78 (select $e77 true       )))
+(let (($e79 (concat $e78 $e78)))
+(let (($e86 ((_ extract 6 0) $e79)))
+                 (bvult $e86        $e35 )
+                                                                                                                                                               )      ))))                         )                   )              )

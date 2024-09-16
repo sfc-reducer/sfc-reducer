@@ -1,0 +1,13 @@
+(declare-fun v9 () (_ BitVec 12))
+(declare-fun v10 () (_ BitVec 8))
+(declare-fun v21 () (_ BitVec 7))
+(assert
+(let (($e7 (_ bv0  4)))
+(let (($e10 (_ bv0 5)))
+(let (($e180 (concat $e7   v10)))
+(let (($e183 (bvand        v9            $e180 )))
+(let (($e316 (   extract      v10  )))
+(let (($e858 (concat $e10 v21)))
+(let (($e859 (bvand $e858 $e183)))
+              (ite        $e316   $e183 $e859)
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ))                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             )                                                                                                                                    )  )                                                                                                                                                  )  )      )

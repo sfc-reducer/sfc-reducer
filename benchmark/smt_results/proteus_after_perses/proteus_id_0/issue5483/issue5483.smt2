@@ -1,0 +1,5 @@
+(declare-fun _substvar_21_ () String)
+(declare-fun _substvar_29_ () String)
+(set-option :strings-lazy-pp false)
+(assert                          (str.<= _substvar_21_ _substvar_29_)           )
+(push 1)

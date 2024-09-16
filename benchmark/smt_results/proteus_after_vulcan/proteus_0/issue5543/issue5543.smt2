@@ -1,0 +1,6 @@
+(declare-const a  (Seq (Seq Int)))
+(declare-const e  (Seq Int))
+(declare-const f  (Seq Int))
+(assert (distinct a         (seq.unit e)   ))
+(assert (=         (seq.unit f)    a  ))
+(check-sat)

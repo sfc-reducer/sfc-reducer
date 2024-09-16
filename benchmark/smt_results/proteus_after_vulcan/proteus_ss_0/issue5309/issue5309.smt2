@@ -1,0 +1,5 @@
+(declare-const i7 Int)
+(declare-const st10  (Set Int))
+(assert (is_singleton st10))
+(assert (member (- i7) st10))
+(check-sat)

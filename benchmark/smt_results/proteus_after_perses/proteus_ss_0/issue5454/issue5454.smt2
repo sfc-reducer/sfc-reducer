@@ -1,0 +1,7 @@
+(set-logic AUFNIA)
+(declare-const _substvar_298_  (Array Int Bool))
+(declare-const i0  Int)
+(declare-const arr--325748303185799905_1467848600759014513-0  (Array Int Bool))
+(declare-const arr-1467848600759014513_3143370635870088364-0  (Array Bool (Array Int Bool)))
+(assert (=                (store arr-1467848600759014513_3143370635870088364-0 false (store (store arr--325748303185799905_1467848600759014513-0 776 true) i0 true)) (store arr-1467848600759014513_3143370635870088364-0 (>= i0 776) _substvar_298_)               ))
+(check-sat)

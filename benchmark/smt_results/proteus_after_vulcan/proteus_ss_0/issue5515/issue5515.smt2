@@ -1,0 +1,10 @@
+(declare-sort Loc 0)
+(declare-datatype    l         ((node (Loc  Int) (Int  Loc) (node  Loc))) )
+(declare-heap (Loc Bool))
+(declare-const dv Int)
+(declare-const v Loc)
+(declare-const l Loc)
+(define-fun ten-tree0 ((v Loc) (Loc Int))Bool
+                                                       (sep (pto v (node Loc l l))(and(_ emp Loc Loc ) (= l (as sep.nil Loc)))                                              )                                  )
+(assert (ten-tree0 v dv))
+(check-sat)

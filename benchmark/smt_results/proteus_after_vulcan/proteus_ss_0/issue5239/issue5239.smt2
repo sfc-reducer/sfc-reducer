@@ -1,0 +1,5 @@
+(set-logic QF_UFC)
+(declare-sort S1 0)
+(declare-const S1-0 S1)
+(assert (fmf.card S1-0 9))
+(check-sat                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   )

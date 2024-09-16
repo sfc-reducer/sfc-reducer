@@ -1,0 +1,12 @@
+(declare-fun bvlambda_5_ () (_ BitVec 1))
+(declare-fun a38 () (Array (_ BitVec 1) (_ BitVec 15)))
+(assert
+(let (($e9 (_ bv0     15)))
+(let (($e70 (store a38 bvlambda_5_ $e9)))
+(let (($e71 (select $e70 (not false))))
+(let (($e74 (   extract        $e71)))
+(let (($e94 (store a38 false       $e71)))
+(let (($e95 (select $e94 $e74)))
+(let (($e111      (= $e9   $e95 )         ))
+                  (= $e74        $e111)
+                                                                                                                                                                      )               ))                   )  ))                                                     )        )

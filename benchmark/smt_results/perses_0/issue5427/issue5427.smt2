@@ -1,0 +1,6 @@
+(declare-fun v7 () Bool)
+(declare-fun i2 () Int)
+(declare-fun i15 () Int)
+(declare-heap (Int Int))
+(assert                                                                (sep (pto i2 (+ 54 i15))      v7        )                                                                                                                                                                                                              )
+(check-sat)

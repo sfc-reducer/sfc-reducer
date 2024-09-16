@@ -1,0 +1,18 @@
+(declare-datatype    a      ((b (c (_ BitVec 32)) (d a)) (r)) )
+(declare-fun f (a (_ BitVec 32)) Bool)
+(declare-sort h 0)
+(declare-fun j (h) a)
+(declare-sort l 0)
+(declare-fun m (l) (_ BitVec 32))
+(declare-fun n (l) a)
+(assert (forall ((i h))                         ((_ is r) (j i))
+                                               ))
+(assert (forall ((i l)) (=          (n i)
+                       (ite (bvugt (c (n i)) (m i)) (b (c (n i))
+          (n i)  )             (n i)  )    )))
+(assert (exists ((o a) (t (_ BitVec 32)) (p (_ BitVec 32))) (not (=>
+ (f      (d o)  t)  (or (not              (not (forall ((q h)) (not
+      (= (j q) o)             ))) )
+                                            (forall ((q l))
+ (= (m q) p)              ))))))
+(check-sat)
