@@ -38,7 +38,7 @@ Run ```cd benchmark```. Then run the following commands to get the results in cs
     ```./convert_result_to_csv.py -d smt_results/perses_0/* > smt_results/perses_results.csv```
 
 - Vulcan
-    ```./convert_result_to_csv.py -d smt_results/vulcan_0/* > smt_results/vulcan_results```
+    ```./convert_result_to_csv.py -d smt_results/vulcan_0/* > smt_results/vulcan_results.csv```
 
 - SFC_Perses
     ```./convert_result_to_csv.py -d smt_results/proteus_after_perses/proteus_0/* > smt_results/proj_after_perses_results.csv```
