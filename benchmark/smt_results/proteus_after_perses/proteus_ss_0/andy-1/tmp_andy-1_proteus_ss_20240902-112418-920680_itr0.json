@@ -1,0 +1,11 @@
+{
+    "Subject": "smt_benchmarks/benchmarks/andy-1",
+    "Reducer": "proteus_ss",
+    "Environment": null,
+    "Origin token count": 19095,
+    "Iteration": 0,
+    "Query": 2,
+    "Time": 10,
+    "Token_remaining": 0,
+    "Ret_code": 0
+}

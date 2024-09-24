@@ -1,0 +1,11 @@
+{
+    "Subject": "rust_benchmarks/rust-78720",
+    "Reducer": "vulcan",
+    "Environment": null,
+    "Origin token count": 121,
+    "Iteration": 0,
+    "Query": 3795,
+    "Time": 351,
+    "Token_remaining": 56,
+    "Ret_code": 0
+}

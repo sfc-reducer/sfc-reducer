@@ -1,0 +1,11 @@
+{
+    "Subject": "tamer-dataset/crash_bugs/158782/tc1562",
+    "Reducer": "vulcan",
+    "Environment": null,
+    "Origin token count": 10241,
+    "Iteration": 0,
+    "Query": 8487,
+    "Time": 433,
+    "Token_remaining": 79,
+    "Ret_code": 0
+}

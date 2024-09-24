@@ -1,0 +1,11 @@
+{
+    "Subject": "c_benchmarks/clang-27747",
+    "Reducer": "proteus_ss",
+    "Environment": null,
+    "Origin token count": 173840,
+    "Iteration": 0,
+    "Query": 6694,
+    "Time": 1155,
+    "Token_remaining": 105,
+    "Ret_code": 0
+}

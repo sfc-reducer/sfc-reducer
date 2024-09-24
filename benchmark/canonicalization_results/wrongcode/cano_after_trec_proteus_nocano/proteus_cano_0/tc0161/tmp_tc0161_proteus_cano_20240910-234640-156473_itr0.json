@@ -1,0 +1,11 @@
+{
+    "Subject": "canonicalization_results/wrongcode/trec_proteus_nocano_0/tc0161",
+    "Reducer": "proteus_cano",
+    "Environment": null,
+    "Origin token count": 71,
+    "Iteration": 0,
+    "Query": 868,
+    "Time": 103,
+    "Token_remaining": 71,
+    "Ret_code": 0
+}

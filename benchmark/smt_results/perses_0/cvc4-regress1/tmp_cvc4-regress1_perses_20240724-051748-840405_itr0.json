@@ -1,0 +1,11 @@
+{
+    "Subject": "smt_benchmarks/benchmarks/cvc4-regress1",
+    "Reducer": "perses",
+    "Environment": "Default",
+    "Origin token count": 69045,
+    "Iteration": 0,
+    "Query": 190177,
+    "Time": 89269,
+    "Token_remaining": 25678,
+    "Ret_code": 0
+}

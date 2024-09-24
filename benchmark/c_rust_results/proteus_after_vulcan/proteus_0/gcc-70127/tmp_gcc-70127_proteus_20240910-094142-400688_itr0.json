@@ -1,0 +1,11 @@
+{
+    "Subject": "c_results/vulcan_0/gcc-70127",
+    "Reducer": "proteus",
+    "Environment": null,
+    "Origin token count": 230,
+    "Iteration": 0,
+    "Query": 26234,
+    "Time": 6353,
+    "Token_remaining": 187,
+    "Ret_code": 0
+}

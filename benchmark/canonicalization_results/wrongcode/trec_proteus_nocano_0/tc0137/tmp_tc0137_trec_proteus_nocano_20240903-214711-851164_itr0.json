@@ -1,0 +1,11 @@
+{
+    "Subject": "tamer-dataset/wrongcode_bugs/156496/tc0137",
+    "Reducer": "trec_proteus_nocano",
+    "Environment": null,
+    "Origin token count": 11459,
+    "Iteration": 0,
+    "Query": 13876,
+    "Time": 2152,
+    "Token_remaining": 76,
+    "Ret_code": 0
+}

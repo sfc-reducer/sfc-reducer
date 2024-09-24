@@ -1,0 +1,11 @@
+{
+    "Subject": "tamer-dataset/crash_bugs/138924/tc1427",
+    "Reducer": "trec_perses",
+    "Environment": null,
+    "Origin token count": 50507,
+    "Iteration": 0,
+    "Query": 782,
+    "Time": 162,
+    "Token_remaining": 43,
+    "Ret_code": 0
+}

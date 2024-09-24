@@ -1,0 +1,11 @@
+{
+    "Subject": "tamer-dataset/wrongcode_bugs/158782/tc1287",
+    "Reducer": "trec_perses",
+    "Environment": null,
+    "Origin token count": 15518,
+    "Iteration": 0,
+    "Query": 3419,
+    "Time": 737,
+    "Token_remaining": 188,
+    "Ret_code": 0
+}

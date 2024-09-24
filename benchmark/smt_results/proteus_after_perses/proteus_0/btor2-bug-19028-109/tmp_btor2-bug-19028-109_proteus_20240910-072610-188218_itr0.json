@@ -1,0 +1,11 @@
+{
+    "Subject": "smt_results/perses_0/btor2-bug-19028-109",
+    "Reducer": "proteus",
+    "Environment": null,
+    "Origin token count": 578,
+    "Iteration": 0,
+    "Query": 16487,
+    "Time": 652,
+    "Token_remaining": 250,
+    "Ret_code": 0
+}

@@ -1,0 +1,11 @@
+{
+    "Subject": "smt_benchmarks/benchmarks/issue5280",
+    "Reducer": "perses",
+    "Environment": "Default",
+    "Origin token count": 61,
+    "Iteration": 0,
+    "Query": 61,
+    "Time": 5,
+    "Token_remaining": 40,
+    "Ret_code": 0
+}

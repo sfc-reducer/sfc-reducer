@@ -1,0 +1,11 @@
+{
+    "Subject": "rust_benchmarks/rust-78655",
+    "Reducer": "perses",
+    "Environment": "Default",
+    "Origin token count": 28,
+    "Iteration": 0,
+    "Query": 39,
+    "Time": 5,
+    "Token_remaining": 26,
+    "Ret_code": 0
+}

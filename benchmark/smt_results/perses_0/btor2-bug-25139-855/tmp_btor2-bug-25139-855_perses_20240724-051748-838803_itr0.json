@@ -1,0 +1,11 @@
+{
+    "Subject": "smt_benchmarks/benchmarks/btor2-bug-25139-855",
+    "Reducer": "perses",
+    "Environment": "Default",
+    "Origin token count": 20222,
+    "Iteration": 0,
+    "Query": 16014,
+    "Time": 496,
+    "Token_remaining": 636,
+    "Ret_code": 0
+}

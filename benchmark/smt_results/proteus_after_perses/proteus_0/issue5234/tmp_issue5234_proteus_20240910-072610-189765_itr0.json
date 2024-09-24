@@ -1,0 +1,11 @@
+{
+    "Subject": "smt_results/perses_0/issue5234",
+    "Reducer": "proteus",
+    "Environment": null,
+    "Origin token count": 50,
+    "Iteration": 0,
+    "Query": 2000,
+    "Time": 100,
+    "Token_remaining": 23,
+    "Ret_code": 0
+}

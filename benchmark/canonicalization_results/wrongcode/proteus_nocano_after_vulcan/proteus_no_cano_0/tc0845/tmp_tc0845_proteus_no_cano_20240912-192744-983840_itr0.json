@@ -1,0 +1,11 @@
+{
+    "Subject": "canonicalization_results/wrongcode/vulcan_0/tc0845",
+    "Reducer": "proteus_no_cano",
+    "Environment": null,
+    "Origin token count": 97,
+    "Iteration": 0,
+    "Query": 6980,
+    "Time": 381,
+    "Token_remaining": 90,
+    "Ret_code": 0
+}

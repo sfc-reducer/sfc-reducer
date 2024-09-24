@@ -1,0 +1,11 @@
+{
+    "Subject": "tamer-dataset/crash_bugs/138924/tc2393",
+    "Reducer": "trec_proteus_vulcan_nocano",
+    "Environment": null,
+    "Origin token count": 10316,
+    "Iteration": 0,
+    "Query": 1642,
+    "Time": 114,
+    "Token_remaining": 25,
+    "Ret_code": 0
+}

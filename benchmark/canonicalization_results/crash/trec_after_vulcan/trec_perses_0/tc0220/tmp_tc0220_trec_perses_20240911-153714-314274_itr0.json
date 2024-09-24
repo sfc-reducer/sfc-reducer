@@ -1,0 +1,11 @@
+{
+    "Subject": "canonicalization_results/crash/vulcan_0/tc0220",
+    "Reducer": "trec_perses",
+    "Environment": null,
+    "Origin token count": 420,
+    "Iteration": 0,
+    "Query": 7611,
+    "Time": 424,
+    "Token_remaining": 419,
+    "Ret_code": 0
+}

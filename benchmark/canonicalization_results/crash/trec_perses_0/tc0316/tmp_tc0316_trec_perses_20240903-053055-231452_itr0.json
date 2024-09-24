@@ -1,0 +1,11 @@
+{
+    "Subject": "tamer-dataset/crash_bugs/140081/tc0316",
+    "Reducer": "trec_perses",
+    "Environment": null,
+    "Origin token count": 18511,
+    "Iteration": 0,
+    "Query": 1167,
+    "Time": 209,
+    "Token_remaining": 56,
+    "Ret_code": 0
+}

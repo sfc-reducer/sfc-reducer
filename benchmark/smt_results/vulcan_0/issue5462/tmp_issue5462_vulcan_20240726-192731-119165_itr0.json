@@ -1,0 +1,11 @@
+{
+    "Subject": "smt_benchmarks/benchmarks/issue5462",
+    "Reducer": "vulcan",
+    "Environment": null,
+    "Origin token count": 832,
+    "Iteration": 0,
+    "Query": 63565,
+    "Time": 3615,
+    "Token_remaining": 416,
+    "Ret_code": 0
+}

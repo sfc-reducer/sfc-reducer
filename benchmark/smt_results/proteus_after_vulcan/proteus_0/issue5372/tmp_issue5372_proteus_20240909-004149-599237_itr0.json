@@ -1,0 +1,11 @@
+{
+    "Subject": "smt_results/vulcan_0/issue5372",
+    "Reducer": "proteus",
+    "Environment": null,
+    "Origin token count": 37,
+    "Iteration": 0,
+    "Query": 1192,
+    "Time": 58,
+    "Token_remaining": 35,
+    "Ret_code": 0
+}

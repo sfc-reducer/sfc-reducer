@@ -1,0 +1,11 @@
+{
+    "Subject": "smt_benchmarks/benchmarks/issue5471",
+    "Reducer": "proteus_ss",
+    "Environment": null,
+    "Origin token count": 73,
+    "Iteration": 0,
+    "Query": 832,
+    "Time": 35,
+    "Token_remaining": 59,
+    "Ret_code": 0
+}

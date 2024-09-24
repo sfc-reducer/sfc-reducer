@@ -1,0 +1,11 @@
+{
+    "Subject": "canonicalization_results/wrongcode/proteus_nocano_after_vulcan/proteus_no_cano_0/tc0585",
+    "Reducer": "trec_perses",
+    "Environment": null,
+    "Origin token count": 156,
+    "Iteration": 0,
+    "Query": 2022,
+    "Time": 118,
+    "Token_remaining": 155,
+    "Ret_code": 0
+}

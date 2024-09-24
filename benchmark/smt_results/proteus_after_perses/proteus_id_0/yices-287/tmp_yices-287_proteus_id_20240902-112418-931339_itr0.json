@@ -1,0 +1,11 @@
+{
+    "Subject": "smt_benchmarks/benchmarks/yices-287",
+    "Reducer": "proteus_id",
+    "Environment": null,
+    "Origin token count": 41400,
+    "Iteration": 0,
+    "Query": 11543,
+    "Time": 651,
+    "Token_remaining": 179,
+    "Ret_code": 0
+}

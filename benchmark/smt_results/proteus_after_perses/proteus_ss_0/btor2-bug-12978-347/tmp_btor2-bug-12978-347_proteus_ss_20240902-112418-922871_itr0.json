@@ -1,0 +1,11 @@
+{
+    "Subject": "smt_benchmarks/benchmarks/btor2-bug-12978-347",
+    "Reducer": "proteus_ss",
+    "Environment": null,
+    "Origin token count": 22836,
+    "Iteration": 0,
+    "Query": 6089,
+    "Time": 871,
+    "Token_remaining": 324,
+    "Ret_code": 0
+}

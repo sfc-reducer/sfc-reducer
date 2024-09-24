@@ -1,0 +1,11 @@
+{
+    "Subject": "tamer-dataset/wrongcode_bugs/133004/tc0376",
+    "Reducer": "vulcan",
+    "Environment": null,
+    "Origin token count": 11947,
+    "Iteration": 0,
+    "Query": 14057,
+    "Time": 1310,
+    "Token_remaining": 182,
+    "Ret_code": 0
+}

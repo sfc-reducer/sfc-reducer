@@ -1,0 +1,11 @@
+{
+    "Subject": "canonicalization_results/wrongcode/vulcan_0/tc0287",
+    "Reducer": "trec_perses",
+    "Environment": null,
+    "Origin token count": 234,
+    "Iteration": 0,
+    "Query": 2748,
+    "Time": 225,
+    "Token_remaining": 234,
+    "Ret_code": 0
+}

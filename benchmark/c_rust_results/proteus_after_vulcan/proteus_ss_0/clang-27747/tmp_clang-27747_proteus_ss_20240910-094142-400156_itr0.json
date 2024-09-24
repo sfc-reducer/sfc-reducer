@@ -1,0 +1,11 @@
+{
+    "Subject": "c_results/vulcan_0/clang-27747",
+    "Reducer": "proteus_ss",
+    "Environment": null,
+    "Origin token count": 79,
+    "Iteration": 0,
+    "Query": 2662,
+    "Time": 317,
+    "Token_remaining": 79,
+    "Ret_code": 0
+}

@@ -1,0 +1,11 @@
+{
+    "Subject": "c_benchmarks/gcc-61383",
+    "Reducer": "proteus",
+    "Environment": null,
+    "Origin token count": 32449,
+    "Iteration": 0,
+    "Query": 27421,
+    "Time": 17711,
+    "Token_remaining": 183,
+    "Ret_code": 0
+}

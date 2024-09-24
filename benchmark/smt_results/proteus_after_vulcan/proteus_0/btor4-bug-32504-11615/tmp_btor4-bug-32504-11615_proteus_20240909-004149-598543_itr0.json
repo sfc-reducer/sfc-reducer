@@ -1,0 +1,11 @@
+{
+    "Subject": "smt_results/vulcan_0/btor4-bug-32504-11615",
+    "Reducer": "proteus",
+    "Environment": null,
+    "Origin token count": 143,
+    "Iteration": 0,
+    "Query": 4770,
+    "Time": 152,
+    "Token_remaining": 143,
+    "Ret_code": 0
+}

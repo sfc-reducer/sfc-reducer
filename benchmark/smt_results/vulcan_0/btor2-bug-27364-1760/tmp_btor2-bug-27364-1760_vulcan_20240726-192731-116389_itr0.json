@@ -1,0 +1,11 @@
+{
+    "Subject": "smt_benchmarks/benchmarks/btor2-bug-27364-1760",
+    "Reducer": "vulcan",
+    "Environment": null,
+    "Origin token count": 24530,
+    "Iteration": 0,
+    "Query": 35473,
+    "Time": 1016,
+    "Token_remaining": 224,
+    "Ret_code": 0
+}
