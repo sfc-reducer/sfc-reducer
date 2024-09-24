@@ -11,7 +11,7 @@ def read_results(file_path, benchmark_names):
         lines = f.readlines()
         for line in lines:
             parts = line.strip().split(',')
-            name = parts[0]
+            name = os.path.basename(parts[0])
             time = int(parts[2])
             size = int(parts[3])
             if (size == 0 or name not in benchmark_names):
@@ -27,7 +27,9 @@ def get_benchmarks_info(file_path):
         lines = f.readlines()
         for line in lines:
             parts = line.strip().split(',')
-            benchmark_names.append(parts[0])
+            benchmark_dir = parts[0]
+            benchmark_name = os.path.basename(benchmark_dir)
+            benchmark_names.append(benchmark_name)
     return benchmark_names
 
 
