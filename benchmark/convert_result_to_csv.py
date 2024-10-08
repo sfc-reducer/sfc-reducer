@@ -94,7 +94,7 @@ def main():
 
     csv_rowlist = [header_row+['Byte_size']]
     for file in file_list:
-        print(os.path.basename(file))
+        # print(os.path.basename(file))
         csv_row = extract_from_json(file, header_row)
         csv_row.append(get_byte_size(file))
         csv_rowlist.append(csv_row)

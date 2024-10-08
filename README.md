@@ -4,60 +4,29 @@
 ### Minimization Experiments
 Run ```cd benchmark```. Then run the following commands to get the results in csv format.
 #### C & Rust results:
-- Perses
-    ```./convert_result_to_csv.py -d c_rust_results/perses_0/*```
-
-- Vulcan
-    ```./convert_result_to_csv.py -d c_rust_results/vulcan_0/*```
-
-- SFC_Perses
-    ```
-    For C
-    ./convert_result_to_csv.py -d c_rust_results/proteus_0/*
-    For Rust
-    ./convert_result_to_csv.py -d c_rust_results/proteus_after_perses/proteus_0/*
-    ```
-
-- SFC_Vulcan
-    ```./convert_result_to_csv.py -d c_rust_results/proteus_after_vulcan/proteus_0/*```
-
-- SFC_Perses--ie
-    ```./convert_result_to_csv.py -d c_rust_results/proteus_after_perses/proteus_ss_0/*```
-
-- SFC_Perses--ssr
-    ```./convert_result_to_csv.py -d c_rust_results/proteus_after_perses/proteus_id_0/*```
-
-- SFC_Vulcan--ie
-    ```./convert_result_to_csv.py -d c_rust_results/proteus_after_vulcan/proteus_ss_0/*```
-
-- SFC_Vulcan--ssr
-    ```./convert_result_to_csv.py -d c_rust_results/proteus_after_vulcan/proteus_id_0/*```
+```bash
+./convert_result_to_csv.py -d c_rust_results/perses_0/*     # Perses
+./convert_result_to_csv.py -d c_rust_results/vulcan_0/*     # Vulcan
+./convert_result_to_csv.py -d c_rust_results/proteus_0/*    # SFC_Perses for C
+./convert_result_to_csv.py -d c_rust_results/proteus_after_perses/proteus_0/*       # SFC_Perses for Rust
+./convert_result_to_csv.py -d c_rust_results/proteus_after_vulcan/proteus_0/*       # SFC_Vulcan
+./convert_result_to_csv.py -d c_rust_results/proteus_after_perses/proteus_ss_0/*    # SFC_Perses--ie
+./convert_result_to_csv.py -d c_rust_results/proteus_after_perses/proteus_id_0/*    # SFC_Perses--ssr
+./convert_result_to_csv.py -d c_rust_results/proteus_after_vulcan/proteus_ss_0/*    # SFC_Vulcan--ie
+./convert_result_to_csv.py -d c_rust_results/proteus_after_vulcan/proteus_id_0/*    # SFC_Vulcan--ssr
+```
 
 #### SMT results:
-- Perses
-    ```./convert_result_to_csv.py -d smt_results/perses_0/* > smt_results/perses_results.csv```
-
-- Vulcan
-    ```./convert_result_to_csv.py -d smt_results/vulcan_0/* > smt_results/vulcan_results.csv```
-
-- SFC_Perses
-    ```./convert_result_to_csv.py -d smt_results/proteus_after_perses/proteus_0/* > smt_results/proj_after_perses_results.csv```
-
-- SFC_Vulcan
-    ```./convert_result_to_csv.py -d smt_results/proteus_after_vulcan/proteus_0/* > smt_results/proj_after_vulcan_results.csv```
-
-- SFC_Perses--ie
-    ```./convert_result_to_csv.py -d smt_results/proteus_after_perses/proteus_ss_0/* > smt_results/proj_ss_results.csv```
-
-- SFC_Perses--ssr
-    ```./convert_result_to_csv.py -d smt_results/proteus_after_perses/proteus_id_0/* > smt_results/proj_id_results.csv```
-
-- SFC_Vulcan--ie
-    ```./convert_result_to_csv.py -d smt_results/proteus_after_vulcan/proteus_ss_0/* > smt_results/proj_vulcan_ss_results.csv```
-
-- SFC_Vulcan--ssr
-    ```./convert_result_to_csv.py -d smt_results/proteus_after_vulcan/proteus_id_0/* > smt_results/proj_vulcan_id_results.csv```
-
+```bash
+./convert_result_to_csv.py -d smt_results/perses_0/* > smt_results/perses_results.csv           # Perses
+./convert_result_to_csv.py -d smt_results/vulcan_0/* > smt_results/vulcan_results.csv           # Vulcan
+./convert_result_to_csv.py -d smt_results/proteus_after_perses/proteus_0/* > smt_results/proj_after_perses_results.csv      # SFC_Perses
+./convert_result_to_csv.py -d smt_results/proteus_after_vulcan/proteus_0/* > smt_results/proj_after_vulcan_results.csv      # SFC_Vulcan
+./convert_result_to_csv.py -d smt_results/proteus_after_perses/proteus_ss_0/* > smt_results/proj_ss_results.csv         # SFC_Perses--ie
+./convert_result_to_csv.py -d smt_results/proteus_after_perses/proteus_id_0/* > smt_results/proj_id_results.csv         # SFC_Perses--ssr
+./convert_result_to_csv.py -d smt_results/proteus_after_vulcan/proteus_ss_0/* > smt_results/proj_vulcan_ss_results.csv  # SFC_Vulcan--ie
+./convert_result_to_csv.py -d smt_results/proteus_after_vulcan/proteus_id_0/* > smt_results/proj_vulcan_id_results.csv  # SFC_Vulcan--ssr
+```
 - Plot
     ```
     cd smt_results

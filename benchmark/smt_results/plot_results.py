@@ -8,7 +8,7 @@ def read_results(file_path, benchmark_names):
     times = []
     sizes = []
     with open (file_path, 'r') as f:
-        lines = f.readlines()
+        lines = f.readlines()[1:]
         for line in lines:
             parts = line.strip().split(',')
             name = os.path.basename(parts[0])
@@ -127,7 +127,7 @@ def main():
             plt.annotate(text, xy=(x-0.4, y+220), fontsize=12)
 
     plt.tight_layout()
-    plt.savefig("../../figures/smt-size.pdf")
+    # plt.savefig("../../figures/smt-size.pdf")
     plt.show()
 
     data = [perses_sizes, proj_sizes, proj_id_sizes, proj_ss_sizes]
@@ -170,7 +170,7 @@ def main():
         plt.annotate(text, xy=(x-0.4, y+2000), fontsize=12)
 
     plt.tight_layout()
-    plt.savefig("../../figures/smt-time.pdf")
+    # plt.savefig("../../figures/smt-time.pdf")
     plt.show()
 
 if __name__ == '__main__':
