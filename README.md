@@ -14,6 +14,7 @@ Run ```cd benchmark```. Then run the following commands to get the results in cs
 ./convert_result_to_csv.py -d c_rust_results/proteus_after_perses/proteus_id_0/*    # SFC_Perses--ssr
 ./convert_result_to_csv.py -d c_rust_results/proteus_after_vulcan/proteus_ss_0/*    # SFC_Vulcan--ie
 ./convert_result_to_csv.py -d c_rust_results/proteus_after_vulcan/proteus_id_0/*    # SFC_Vulcan--ssr
+./convert_result_to_csv.py -d c_rust_results/creduce_0/*    # C-Reduce
 ```
 
 #### SMT results:
@@ -26,11 +27,18 @@ Run ```cd benchmark```. Then run the following commands to get the results in cs
 ./convert_result_to_csv.py -d smt_results/proteus_after_perses/proteus_id_0/* > smt_results/proj_id_results.csv         # SFC_Perses--ssr
 ./convert_result_to_csv.py -d smt_results/proteus_after_vulcan/proteus_ss_0/* > smt_results/proj_vulcan_ss_results.csv  # SFC_Vulcan--ie
 ./convert_result_to_csv.py -d smt_results/proteus_after_vulcan/proteus_id_0/* > smt_results/proj_vulcan_id_results.csv  # SFC_Vulcan--ssr
+./convert_result_to_csv.py -d smt_results/ddsmt_0/* > smt_results/ddsmt_results.csv           # ddSMT
 ```
-- Plot
+#### Plot
     ```
-    cd smt_results
-    python3 plot_results.py
+    cd results_csv/c
+    python plot_c_results.py
+
+    cd results_csv/rust
+    python plot_rust_results.py
+
+    cd results_csv/smt
+    python plot_smt_results.py
     ```
 
 ### Canonicalization Experiments
@@ -142,4 +150,12 @@ First run ```cd /tmp/benchmark```, then run the following command to launch the 
     ```
     ./run_exp_parallel.py -s c_rust_results/vulcan_0/* -r proteus_ss -o c_rust_results/proteus_after_vulcan -j <number_of_cpus>
     ./run_exp_parallel.py -s smt_results/vulcan_0/* -r proteus_ss -o smt_results/proteus_after_vulcan -j <number_of_cpus>
+    ```
+- Run C-Reduce
+    ```
+    ./run_exp_parallel.py -s c_rust_results/perses_0/* -r creduce -o c_rust_results/creduce -j <number_of_cpus>
+    ```
+- Run ddSMT
+    ```
+    ./run_exp_parallel.py -s smt_results/perses_0/* -r ddsmt -o smt_results/ddsmt -j <number_of_cpus>
     ```
