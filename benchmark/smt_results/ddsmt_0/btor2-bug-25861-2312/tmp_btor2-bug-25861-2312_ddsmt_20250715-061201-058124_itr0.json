@@ -1,0 +1,11 @@
+{
+    "Subject": "smt_benchmarks/benchmarks/btor2-bug-25861-2312",
+    "Reducer": "ddsmt",
+    "Environment": null,
+    "Origin token count": 46337,
+    "Iteration": 0,
+    "Query": 4386,
+    "Time": 360,
+    "Token_remaining": 158,
+    "Ret_code": 0
+}

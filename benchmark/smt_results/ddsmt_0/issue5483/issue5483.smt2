@@ -1,0 +1,5 @@
+(declare-fun s () String)
+(declare-fun _s () String)
+(set-option :strings-lazy-pp false)
+(assert (str.<= s _s))
+(push)

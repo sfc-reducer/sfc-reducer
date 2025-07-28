@@ -1,0 +1,5 @@
+(declare-const i Int)
+(declare-fun s () (Set Int))
+(assert (is_singleton s))
+(assert (member (- i) s))
+(check-sat)

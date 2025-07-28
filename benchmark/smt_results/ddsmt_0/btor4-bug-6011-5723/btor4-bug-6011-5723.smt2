@@ -1,0 +1,5 @@
+(declare-fun v () (_ BitVec 15))
+(declare-fun v9 () (_ BitVec 1))
+(declare-fun v2 () (_ BitVec 8))
+(declare-fun a () (Array (_ BitVec 15) (_ BitVec 14)))
+(assert (let (($e1239 (ite (= v9 (_ bv0 1)) (bvand v (concat v2 (_ bv0 7))) (bvand (bvand v (concat v2 (_ bv0 7))) ((_ zero_extend 1) (select a (_ bv0 15)))))))))

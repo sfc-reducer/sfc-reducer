@@ -1,0 +1,7 @@
+(set-option :solve-bv-as-int sum)
+(declare-fun u (Bool Bool Bool Bool Bool Bool) Bool)
+(declare-fun u (Bool Bool Bool Bool Bool Bool Bool) Bool)
+(assert (u true true true true true true true))
+(push)
+(assert (u true true true true true (u true true true true true true true)))
+(check-sat)

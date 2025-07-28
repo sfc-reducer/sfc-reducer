@@ -1,0 +1,5 @@
+(declare-fun v () (_ BitVec 1))
+(declare-fun a4 () (Array (_ BitVec 4) (_ BitVec 6)))
+(declare-fun a45 () (Array (_ BitVec 12) (_ BitVec 4)))
+(declare-fun a () (Array (_ BitVec 8) (_ BitVec 12)))
+(assert (let (($e386 (ite (= v (_ bv0 1)) (bvand ((_ zero_extend 6) (select a4 (_ bv1 4))) (select a ((_ zero_extend 4) (select a45 (_ bv0 12))))) (bvand ((_ zero_extend 6) (select a4 (_ bv0 4))) (bvand ((_ zero_extend 6) (select a4 (_ bv1 4))) (select a ((_ zero_extend 4) (select a45 (_ bv0 12)))))))))))

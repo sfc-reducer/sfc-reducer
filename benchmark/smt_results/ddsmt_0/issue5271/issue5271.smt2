@@ -1,0 +1,5 @@
+(declare-fun t () Int)
+(declare-fun t7 () (Set Int))
+(assert (> (card t7) 1))
+(assert (and (member 0 t7) (member (mod t 1) t7)))
+(check-sat)

@@ -1,0 +1,6 @@
+(set-logic ALIA)
+(declare-fun i () Int)
+(declare-fun a () (Array Int Bool))
+(declare-fun r () (Array Bool (Array Int Bool)))
+(assert (= (store r (>= i 1) a) (store r false (store (store a 1 true) i true))))
+(check-sat)

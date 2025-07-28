@@ -1,0 +1,6 @@
+(declare-fun b () (_ BitVec 1))
+(declare-fun v () (_ BitVec 7))
+(declare-fun a () (Array (_ BitVec 4) (_ BitVec 10)))
+(declare-fun a5 () (Array (_ BitVec 1) (_ BitVec 10)))
+(declare-fun a53 () (Array (_ BitVec 3) (_ BitVec 6)))
+(assert (not (= (ite (bvult ((_ zero_extend 4) (select a53 (_ bv0 3))) (select (store a5 (extract (bvmul (concat v (_ bv0 7)) (concat (_ bv1 7) (_ bv0 7)))) (_ bv0 10)) (_ bv1 1))) (_ bv1 1) (_ bv0 1)) (ite (bvult ((_ extract 10 0) (ite (= b (_ bv0 1)) (_ bv0 12) ((_ zero_extend 1) (bvnot (_ bv0 11))))) ((_ zero_extend 1) (((select (store a5 (_ bv0 1) (_ bv0 10)) (extract (select a (_ bv0 4)))))))) (_ bv1 1) (_ bv0 1)))))

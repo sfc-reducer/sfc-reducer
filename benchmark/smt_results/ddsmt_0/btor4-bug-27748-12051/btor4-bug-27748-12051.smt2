@@ -1,0 +1,3 @@
+(declare-fun v () (_ BitVec 12))
+(declare-fun a () (_ BitVec 16))
+(assert (let (($e797 (ite (= (_ bv0 1) (ite (bvult (_ bv0 16) a) (_ bv1 1) (_ bv0 1))) (bvand (bvnot (bvand (_ bv1 16) ((_ zero_extend 15) (bvcomp (_ bv0 1) (ite (bvult (_ bv0 16) a) (_ bv1 1) (_ bv0 1)))))) (bvnot (bvand (bvnot (_ bv1 16)) (bvnot ((_ zero_extend 15) (bvcomp (_ bv0 1) (ite (bvult (_ bv0 16) (concat v (_ bv0 4))) (_ bv1 1) (_ bv0 1)))))))) (bvand (_ bv1 16) (bvand (bvnot (bvand (_ bv1 16) ((_ zero_extend 15) (bvcomp (_ bv0 1) (ite (bvult (_ bv0 16) a) (_ bv1 1) (_ bv0 1)))))) (bvnot (bvand (bvnot (_ bv1 16)) (bvnot ((_ zero_extend 15) (bvcomp (_ bv0 1) (ite (bvult (_ bv0 16) (concat v (_ bv0 4))) (_ bv1 1) (_ bv0 1))))))))))))))

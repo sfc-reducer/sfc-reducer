@@ -1,0 +1,5 @@
+(declare-const x Bool)
+(declare-fun i () Int)
+(declare-fun b () (_ BitVec 3))
+(assert (or (or false x) (and (= b ((_ int2bv 3) i)) (= b (bvurem (_ bv0 3) ((_ int2bv 3) i))))))
+(check-sat)

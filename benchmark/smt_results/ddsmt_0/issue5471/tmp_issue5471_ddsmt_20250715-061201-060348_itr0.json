@@ -1,0 +1,11 @@
+{
+    "Subject": "smt_benchmarks/benchmarks/issue5471",
+    "Reducer": "ddsmt",
+    "Environment": null,
+    "Origin token count": 73,
+    "Iteration": 0,
+    "Query": 545,
+    "Time": 68,
+    "Token_remaining": 28,
+    "Ret_code": 0
+}

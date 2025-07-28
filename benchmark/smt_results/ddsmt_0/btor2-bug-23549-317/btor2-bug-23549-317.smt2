@@ -1,0 +1,5 @@
+(declare-fun v () (_ BitVec 1))
+(declare-fun b () (_ BitVec 1))
+(declare-fun a1 () (Array (_ BitVec 15) (_ BitVec 8)))
+(declare-fun a () (Array (_ BitVec 1) (_ BitVec 9)))
+(assert (or (not (= (_ bv0 9) (select (store a (_ bv0 1) (_ bv0 9)) v))) (and (= (_ bv0 1) (extract (select a (_ bv1 1)))) (not (= (_ bv0 9) (select (store a (_ bv0 1) ((_ zero_extend 1) (select a1 (_ bv0 15)))) b))))))

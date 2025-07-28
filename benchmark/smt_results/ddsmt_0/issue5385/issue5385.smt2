@@ -1,0 +1,6 @@
+(declare-fun r2 () Real)
+(declare-fun r () Real)
+(assert (= 0.0 (* r r2)))
+(check-sat)
+(assert (= 1.0 (* r2 r2)))
+(check-sat)

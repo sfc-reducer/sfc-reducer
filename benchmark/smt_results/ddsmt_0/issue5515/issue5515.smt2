@@ -1,0 +1,7 @@
+(declare-sort L 0)
+(declare-datatypes ((N 0)) (((n (d Int) (l L) (i L)))))
+(declare-heap (L N))
+(declare-const v L)
+(declare-const r L)
+(assert (and (sep (pto v (n 0 v r)) (and (_ emp L N) (= r (as sep.nil L))))))
+(check-sat)

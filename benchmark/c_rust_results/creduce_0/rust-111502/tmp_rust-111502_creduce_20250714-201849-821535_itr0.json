@@ -1,0 +1,11 @@
+{
+    "Subject": "rust_benchmarks/rust-111502",
+    "Reducer": "creduce",
+    "Environment": null,
+    "Origin token count": 192,
+    "Iteration": 0,
+    "Query": 13177,
+    "Time": 822,
+    "Token_remaining": 161,
+    "Ret_code": 0
+}

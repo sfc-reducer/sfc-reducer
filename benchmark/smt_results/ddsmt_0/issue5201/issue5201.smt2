@@ -1,0 +1,5 @@
+(set-option :check-models true)
+(declare-fun b (Int Int) Int)
+(declare-fun g () Int)
+(assert (and (= g (b g 1)) (= 1 (+ g (b 0 0)))))
+(check-sat)

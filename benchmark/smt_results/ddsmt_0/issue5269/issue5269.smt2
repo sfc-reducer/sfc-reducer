@@ -1,0 +1,8 @@
+(declare-sort A 0)
+(declare-sort U 0)
+(declare-fun t () (Set (Tuple U)))
+(declare-fun h () (Set (Tuple A)))
+(declare-fun th () (Set (Tuple A U U)))
+(assert (subset th (product h (product t t))))
+(assert (forall ((t A)) (distinct (join h th) (as emptyset (Set (Tuple U U))))))
+(check-sat)

@@ -1,0 +1,11 @@
+{
+    "Subject": "smt_benchmarks/benchmarks/z3-2468",
+    "Reducer": "ddsmt",
+    "Environment": null,
+    "Origin token count": 20546,
+    "Iteration": 0,
+    "Query": 4,
+    "Time": 1,
+    "Token_remaining": 0,
+    "Ret_code": 0
+}

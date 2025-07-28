@@ -1,0 +1,6 @@
+(declare-fun v () (_ BitVec 1))
+(declare-fun b () (_ BitVec 1))
+(declare-fun a1 () (Array (_ BitVec 16) (_ BitVec 5)))
+(declare-fun a13 () (Array (_ BitVec 13) (_ BitVec 14)))
+(declare-fun a () (Array (_ BitVec 1) (_ BitVec 13)))
+(assert (not (= (_ bv0 1) (bvand (ite (bvult (bvnot (select (store a (_ bv0 1) (_ bv0 13)) v)) ((_ zero_extend 8) (select a1 (_ bv0 16)))) (_ bv1 1) (_ bv0 1)) (bvcomp (_ bv0 14) (select a13 (select (store a b (_ bv0 13)) (_ bv1 1))))))))

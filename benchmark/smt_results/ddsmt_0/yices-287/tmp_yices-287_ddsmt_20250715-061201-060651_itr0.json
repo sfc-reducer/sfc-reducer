@@ -1,0 +1,11 @@
+{
+    "Subject": "smt_benchmarks/benchmarks/yices-287",
+    "Reducer": "ddsmt",
+    "Environment": null,
+    "Origin token count": 41400,
+    "Iteration": 0,
+    "Query": 17557,
+    "Time": 939,
+    "Token_remaining": 158,
+    "Ret_code": 0
+}

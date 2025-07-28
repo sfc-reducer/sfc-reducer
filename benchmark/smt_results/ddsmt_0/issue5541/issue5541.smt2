@@ -1,0 +1,8 @@
+(set-logic QF_ALL_SUPPORTED)
+(declare-heap (Int Int))
+(push)
+(assert (wand false true))
+(check-sat)
+(pop)
+(assert (pto 0 true))
+(check-sat)

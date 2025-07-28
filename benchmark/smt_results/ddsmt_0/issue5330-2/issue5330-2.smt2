@@ -1,0 +1,6 @@
+(declare-fun s () (Seq Int))
+(declare-fun i () Int)
+(declare-fun v () Bool)
+(declare-fun v2 () Bool)
+(assert (xor v v2 (seq.prefixof (seq.rev (seq.rev s)) (seq.unit i))))
+(check-sat)
