@@ -6,7 +6,7 @@ readonly OUTPUT_BUGGY="output_buggy.txt"
 readonly OUTPUT_CORRECT1="output_correct1.txt"
 
 # echo "$CONFIG_BUGGY" > Cargo.toml
-if ! timeout -s 9 30 rustup run "${VERSION}" rustc small.rs --extern primal_sieve=/tmp/benchmark/rust_benchmarks/rust-99830/primal-sieve-0.3.2/target/release/deps/libprimal_sieve-c55d051ccbe3f934.rlib -L dependency=/tmp/benchmark/rust_benchmarks/rust-99830/primal-sieve-0.3.2/target/release/deps/ -C opt-level=2; then
+if ! timeout -s 9 30 rustup run "${VERSION}" rustc small.rs --extern primal_sieve=/tmp/benchmark/rust_benchmarks/rust-99830/primal-sieve-0.3.2/target/release/deps/libprimal_sieve-992753330ba49db8.rlib -L dependency=/tmp/benchmark/rust_benchmarks/rust-99830/primal-sieve-0.3.2/target/release/deps/ -C opt-level=2; then
     if [ $? -eq 124 ]; then
         echo "Warning: Compilation timed out!"
         cat small.rs
@@ -29,7 +29,7 @@ if ! grep "panicked" "${OUTPUT_BUGGY}" >& /dev/null; then
 fi
 
 # echo "$CONFIG_CORRECT1" > Cargo.toml
-if ! timeout -s 9 30 rustup run "${VERSION}" rustc small.rs --extern primal_sieve=/tmp/benchmark/rust_benchmarks/rust-99830/primal-sieve-0.3.2/target/release/deps/libprimal_sieve-c55d051ccbe3f934.rlib -L dependency=/tmp/benchmark/rust_benchmarks/rust-99830/primal-sieve-0.3.2/target/release/deps/ -C opt-level=1; then
+if ! timeout -s 9 30 rustup run "${VERSION}" rustc small.rs --extern primal_sieve=/tmp/benchmark/rust_benchmarks/rust-99830/primal-sieve-0.3.2/target/release/deps/libprimal_sieve-992753330ba49db8.rlib -L dependency=/tmp/benchmark/rust_benchmarks/rust-99830/primal-sieve-0.3.2/target/release/deps/ -C opt-level=1; then
     if [ $? -eq 124 ]; then
         echo "Warning: Compilation timed out!"
         cat small.rs
