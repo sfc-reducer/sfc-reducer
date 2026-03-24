@@ -37,19 +37,9 @@ def version_from_git(gitdir):
     return GIT_VERSION
 
 
-def version_from_package_metadata():
-    """Tries to obtain a version string from git based on the pypi package
-    information."""
-    try:
-        from importlib import metadata
-    except ImportError:
-        import importlib_metadata as metadata
-    return metadata.version('ddSMT')
-
-
 __dot_git = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..',
                          '.git')
 if os.path.isdir(__dot_git) or os.path.isfile(__dot_git):
     VERSION = version_from_git(os.path.split(__dot_git)[0])
 else:
-    VERSION = version_from_package_metadata()
+    VERSION = ''
